@@ -22,7 +22,7 @@ namespace CalculoPrazoObra
             
             DateTime dataAssinatura = DateTime.Parse(txtDataAssinatura.Text);
             DateTime dataTermino    = DateTime.Parse(txtDataTerminoObra.Text);
-            
+            // Aqui é feito a lógica
             int PrazoObra = ((dataTermino.Year - dataAssinatura.Year) * 12) + dataTermino.Month - dataAssinatura.Month;
             if (dataTermino.Day < dataAssinatura.Day)
             {
